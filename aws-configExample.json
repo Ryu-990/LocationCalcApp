@@ -1,0 +1,8 @@
+{
+  "region": "ap-northeast-1",
+  "identityPoolId": "ap-northeast-1:あなたの実際のID",
+  "trackerName": "あなたのトラッカー名",
+  "mapName": "あなたのマップ名",
+  "placeIndexName": "あなたのプレイスインデックス名",
+  "routeCalculatorName": "あなたのルート計算機名"
+}

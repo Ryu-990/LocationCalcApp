@@ -8,7 +8,7 @@ node_modules/
 dist/
 web-build/
 expo-env.d.ts
-
+aws-config.json
 # Native
 .kotlin/
 *.orig.*

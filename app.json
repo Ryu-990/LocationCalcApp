@@ -12,8 +12,24 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "このアプリは移動距離を計測するために位置情報を使用します。",
+          "locationWhenInUsePermission": "このアプリは移動距離を計測するために位置情報を使用します。"
+        }
+      ]
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "jsEngine": "hermes",
+      "bundleIdentifier": "com.yourcompany.locationcalcapp",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "このアプリは移動距離を計測するために位置情報を使用します。",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "このアプリはバックグラウンドでも移動距離を計測するために位置情報を使用します。",
+        "NSLocationAlwaysUsageDescription": "このアプリはバックグラウンドでも移動距離を計測するために位置情報を使用します。"
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -21,7 +37,15 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "jsEngine": "hermes",
+      "package": "com.yourcompany.locationcalcapp",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "FOREGROUND_SERVICE",
+        "ACCESS_BACKGROUND_LOCATION"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
